@@ -32,7 +32,8 @@ input_thread = threading.Thread(target=inputnum)
 input_thread.daemon = True #автоматически завершаем поток при завершении основной программы
 input_thread.start()
 
-input_thread.join(timeout=12) #ждем 12 сек или завершения ввода
+input_thread.join(timeout=12) #ждем 12 сек или завершения ввода 
+#сгенирировала с помощью gpt
 
 if input_received.is_set(): #проверяем завершился ли ввод
     try:
