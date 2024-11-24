@@ -1,10 +1,6 @@
-import random
+from config import  *
 import threading #импортируем нужные библиотеки
 
-num1 = random.randint(-1000, 1000)
-num2 = random.randint(-1000, 1000)
-ops = ['+', '-', '*', ':']
-cur_op = random.choice(ops) #генерируем случайные числа и операции
 
 if cur_op == '+':
     res = num1 + num2
